@@ -28,6 +28,8 @@ define(['jquery', 'animation', 'sprites'], function($, Animation, sprites) {
 
         	this.image = new Image();
         	this.image.src = this.filepath;
+			this.image.width = this.width;
+			this.image.height = this.height;
 
         	this.image.onload = function() {
         		self.isLoaded = true;
